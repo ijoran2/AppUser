@@ -1,0 +1,2 @@
+Crear interfaz crear dos atributots
+Crear data en asset, y crear menu.json

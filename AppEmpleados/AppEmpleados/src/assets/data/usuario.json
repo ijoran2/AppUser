@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Juan",
+    "apellidoP": "Oran",
+    "apellidoM": "Vsquez",
+    "email": "j.oran@ppfcorp.net",
+    "telefono": "651248",
+    "activo": "1"
+  },
+  {
+    "id": 2,
+    "nombre": "Jose",
+    "apellidoP": "Oran2",
+    "apellidoM": "Vsquez2",
+    "email": "j.oran@ppfcorp.net",
+    "telefono": "651248",
+    "activo": "0"
+  }
+]
