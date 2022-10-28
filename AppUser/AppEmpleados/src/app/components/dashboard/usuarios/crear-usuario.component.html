@@ -1,0 +1,38 @@
+
+<mat-toolbar >
+  <span>Crear Usuario</span>
+  <span class="example-spacer"></span>
+</mat-toolbar>
+<br>
+<div class="container">
+<form [formGroup]="userForm" (ngSubmit)="onFormSubmit()" class="row g-3">
+  <div class="col-md-6">
+    <label class="form-label" for="exampleInputEmail1">Nombre</label>
+    <input formControlName="nombre" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="exampleInputEmail1">Apellido Paterno</label>
+    <input class="form-control" autocomplete="off" formControlName="apellidoP"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apellido Paterno">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="exampleInputEmail1">Apellido Materno</label>
+    <input formControlName="apellidoM" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apellido Materno">
+  </div>
+    <div class="col-md-6">
+    <label class="form-label" for="exampleInputEmail1">Telefono</label>
+    <input formControlName="telefono" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telefono">
+  </div>
+  <div class="col-md-6">
+    <label  class="form-label"for="exampleInputEmail1">Email</label>
+    <input formControlName="email" autocomplete="off" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="exampleInputEmail1">Estado</label>
+    <input formControlName="activo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Estado">
+  </div>
+  <br>
+  <div class="col-12">
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</div>
+</form>
+</div>

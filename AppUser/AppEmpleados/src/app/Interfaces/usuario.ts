@@ -1,9 +1,9 @@
 export interface Usuario{
-  id: number,
-  nombre: string,
-  apellidoP: string,
-  apellidoM: string,
-  email: string,
-  telefono: string,
-  activo: string
+  Id: number,
+  Nombre: string,
+  ApellidoP: string,
+  ApellidoM: string,
+  Email: string,
+  Telefono: string,
+  Activo: string
 }

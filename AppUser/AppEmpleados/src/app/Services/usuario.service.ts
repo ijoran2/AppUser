@@ -25,7 +25,9 @@ return this.http.delete<Usuario[]>("http://localhost:5090/api/Usuarios/"+ usuari
 CraerUsuario(usuario:Usuario[]):Observable<any>{
   const headers = { 'content-type': 'application/json'}
   const body=JSON.stringify(usuario);
-return this.http.post<Usuario>("http://localhost:5090/api/Usuarios/",body,{'headers':headers});
+
+  console.log(usuario);
+return this.http.post<any>("http://localhost:5090/api/Usuarios/",body,{'headers':headers});
    };
 
 ActualzarUsuario(id:number, usuario:Usuario[]):Observable<any>{

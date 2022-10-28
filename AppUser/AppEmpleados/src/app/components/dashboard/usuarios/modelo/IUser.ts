@@ -1,6 +1,10 @@
-export interface IUser {
-  id: number,
-  nombre: string,
-  apellidoP: string,
-  apellidoM: string
+export class Example {
+
+  constructor(
+    public id: number,
+    public name: string,
+    public power: string,
+    public alterEgo?: string
+  ) {  }
+
 }

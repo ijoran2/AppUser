@@ -17,16 +17,6 @@ export class UsuariosComponent implements AfterViewInit,OnInit{
   displayedColumns: string[] = ['id', 'nombre', 'apellidoP', 'apellidoM',"email","telefono","activo","acciones"];
   dataSource: MatTableDataSource<Usuario>;
   usuario:Usuario[]=[];
-  prueba:Usuario[]=[
-    {
-      "id": 6,
-      "nombre": "Angular",
-      "apellidoP": "AngularOran",
-      "apellidoM": "AngularVsquez",
-      "email": "j.oran@ppfcorp.net",
-      "telefono": "651248",
-      "activo": "6"
-    }];
   @ViewChild(MatPaginator)
   paginator!: MatPaginator;
   @ViewChild(MatSort)
@@ -70,15 +60,11 @@ export class UsuariosComponent implements AfterViewInit,OnInit{
           )
           }
   ElimarUsuario(usuarioId:number){
-    this.serviceUsuario.GetDelete(usuarioId).subscribe(
+    this.serviceUsuario.GetDelete(usuarioId).subscribe(data=>
+      this.CargarUsuario()
       )
-      this.CargarUsuario();
+
      }
-  CrearUsuario(usuario:Usuario[]){
-      this.serviceUsuario.CraerUsuario(usuario).subscribe(
-        )
-        this.CargarUsuario();
-       }
 
   ActualizarUsuario(id:number,usuario:Usuario[]){
         this.serviceUsuario.ActualzarUsuario(id,usuario).subscribe(

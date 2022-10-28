@@ -10,10 +10,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
+    LoginComponent
 
   ],
   imports: [

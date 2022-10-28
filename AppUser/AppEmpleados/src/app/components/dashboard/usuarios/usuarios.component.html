@@ -3,6 +3,8 @@
       <span>Usuarios</span>
     </mat-toolbar>
     <br>
+    <button mat-button routerLink="/dashboard/crear">Crear usuario</button>
+    <br>
     <mat-form-field appearance="standard">
       <mat-label>Filter</mat-label>
       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
